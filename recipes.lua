@@ -61,11 +61,11 @@ minetest.register_craft({
 
 minetest.register_craft({
 	output = "cucina_vegana:ciabatta_dough",
-	recipe = {	{"cucina_vegana:soy_milk", "cucina_vegana:sunflower_seeds_oil", ""},
+	recipe = {	{"group:food_milk", "cucina_vegana:sunflower_seeds_oil", ""},
 				{"group:food_flour", "cucina_vegana:rosemary", ""}
 			},
     replacements = {
-                        {"cucina_vegana:soy_milk", "vessels:drinking_glass"},
+                        {"group:food_milk", "vessels:drinking_glass"},
                         {"cucina_vegana:sunflower_seeds_oil", "vessels:glass_bottle"},
                     }
 })
@@ -125,7 +125,7 @@ minetest.register_craft({
 				{"group:food_flour", "group:food_flour", "group:food_flour"}
 			},
     replacements = {
-                    {"group:food_milk", "vessels:glass_bottle"},
+                    {"group:food_milk", "vessels:drinking_glass"},
                     {"group:food_oil", "vessels:glass_bottle"},
                     }
 })
@@ -456,7 +456,7 @@ minetest.register_craft({
 				{"", "vessels:glass_bottle", ""}
 			},
     replacements = {
-            {"cucina_vegana:soy_milk", "vessels:glass_bottle"}
+            {"cucina_vegana:soy_milk", "vessels:drinking_glass"}
                    }
 })
 
@@ -533,12 +533,13 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "cucina_vegana:asparagus_soup",
 	recipe = {	{"cucina_vegana:chives", "group:food_oil", "cucina_vegana:asparagus"},
-				{"", "cucina_vegana:soy_milk", ""},
+				{"", "group:food_milk", ""},
 				{"", "group:food_plate", ""}
 			},
-			replacements = {{"group:food_milk", "vessels:glass_bottle"},
-						   {"group:food_oil", "vessels:glass_bottle"},
-						}
+			replacements = {
+				{"group:food_milk", "vessels:drinking_glass"},
+				{"group:food_oil", "vessels:glass_bottle"},
+			}
 })
 
 minetest.register_craft({
@@ -624,12 +625,13 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "cucina_vegana:soy_soup",
 	recipe = {	{"cucina_vegana:chives", "group:food_oil", "cucina_vegana:parsley"},
-				{"", "cucina_vegana:soy_milk", ""},
+				{"", "group:food_milk", ""},
 				{"", "group:food_plate", ""}
 			},
-			replacements = {{"group:food_milk", "vessels:glass_bottle"},
-						   {"group:food_oil", "vessels:glass_bottle"},
-						}
+			replacements = {
+				{"group:food_milk", "vessels:drinking_glass"},
+				{"group:food_oil", "vessels:glass_bottle"},
+			}
 })
 
 minetest.register_craft({
