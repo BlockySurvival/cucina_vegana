@@ -335,7 +335,7 @@ minetest.register_craft({
 	recipe = {	{"group:dye,color_yellow", "cucina_vegana:soy_milk",  "cucina_vegana:soy_milk"}
 			},
 			replacements = {
-                            {"cucina_vegana:soy_milk", "vessels:drinking_glass"}
+                            {"cucina_vegana:soy_milk", "vessels:drinking_glass 2"}
 						}
 })
 
