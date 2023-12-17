@@ -13,7 +13,7 @@ local step = 6
 local germ = tonumber(cucina_vegana.plant_settings.germ_launch)
 
 if germ == 0 then
-    germ = "_seed"
+    germ = "_1"
 
 else
     germ = "_" .. germ
